@@ -196,3 +196,13 @@ footer {
 .redes-sociales img:hover{
     transform: scale(1.1); 
 }
+
+/* Estilo para pantallas más anchas */
+@media (min-width: 768px) {
+
+  }
+  
+  /* Estilo para pantallas pequeñas */
+  @media (max-width: 767px) {
+    
+  }
