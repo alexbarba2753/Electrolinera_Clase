@@ -200,13 +200,13 @@ footer {
 @media (max-width: 600px) {
     .elemento {
       max-width: 100%; /* Para pantallas pequeñas */
-      max-height: 200px; /* Ajuste de altura */
+      max-height: 800px; /* Ajuste de altura */
     }
   }
   
   @media (min-width: 601px) {
     .elemento {
       max-width: 80%; /* Para pantallas más grandes */
-      max-height: 400px; /* Ajuste de altura */
+      max-height: 900px; /* Ajuste de altura */
     }
   }
