@@ -197,12 +197,16 @@ footer {
     transform: scale(1.1); 
 }
 
-/* Estilo para pantallas más anchas */
-@media (min-width: 768px) {
-
+@media (max-width: 600px) {
+    .elemento {
+      max-width: 100%; /* Para pantallas pequeñas */
+      max-height: 200px; /* Ajuste de altura */
+    }
   }
   
-  /* Estilo para pantallas pequeñas */
-  @media (max-width: 767px) {
-    
+  @media (min-width: 601px) {
+    .elemento {
+      max-width: 80%; /* Para pantallas más grandes */
+      max-height: 400px; /* Ajuste de altura */
+    }
   }
