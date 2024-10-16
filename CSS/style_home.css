@@ -60,41 +60,43 @@ header {
     padding: 50px;
     margin-bottom: 30px;
     width: 100%;
-    height: 15%;
     background: linear-gradient(to right, #D3EEFC, #99FF8A);
-    
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    position: relative;
 }
 
 .container h1 {
     font-size: 2rem;
     color: black;
-    text-align: center;
-    position: absolute;
-    left: 10%;
-    top: 20%;
+    text-align: left; /* Alinea a la izquierda */
 }
 
-.imagen1 img{
+.imagen1 img {
     height: 150px;
-    width: auto;    
-    position: absolute;
-    right: 30%;
-    top: 22%;
+    width: auto; /* Ancho de la imagen */
+    position: absolute; /* Permite moverla libremente */
+    top: 15%; /* Distancia desde la parte superior */
+    right: 35%; /* Distancia desde la izquierda */
 }
 
-.imagen2 img{
+.imagen2 img {
     height: 150px;
-    width: auto;position: absolute;
-    right: 15%;
-    top: 22%;
+    width: auto; /* Ancho de la imagen */
+    position: absolute; /* Permite moverla libremente */
+    top: 15%; /* Distancia desde la parte superior */
+    right: 20%; /* Distancia desde la izquierda */
 }
 
 .buttons {
     margin-top: 15px;
-    position: absolute;
-    left: 14%;
-    top: 35%;
+    margin-left: 5px; /* Alinea botones a la izquierda */
+    position: absolute; /* Permite moverla libremente */
+    top: 70%; /* Distancia desde la parte superior */
+    left: 5%; /* Distancia desde la izquierda */
 }
+
+
 
 button {
     background-color: #efefef;
@@ -110,6 +112,8 @@ button {
 button:hover {
     background-color: #ddd;
 }
+
+
 
 
 /* Estilos para la sección principal */
@@ -152,16 +156,18 @@ button:hover {
     font-size: 1rem;
     color: black;
     text-align: justify;
-    width: 40%;
-    position: absolute;
-    right: 15%;
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: justify; /* Alinea el texto al centro */
+    
 }
 
 .actions {
     margin-top: 20px;
-    position: absolute;
-    top: 90%;
-    right: 21%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 .actions button {
