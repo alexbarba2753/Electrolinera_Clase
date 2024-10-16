@@ -17,6 +17,7 @@ header {
     background-color: #D0F6F0; /* Fondo claro del header */
     position: relative;
     z-index: 2; 
+    width: 100%;
 
 }
 
@@ -52,6 +53,8 @@ header {
 
 }
 
+
+/* contenido main*/
 .espacio{
     padding: 20px;
 }
@@ -184,6 +187,7 @@ footer {
     background-color: black;       /* Fondo negro */
     color: white;                  /* Texto en blanco */
     font-size: 25px;
+
 }
   
 .redes-sociales {
@@ -203,16 +207,171 @@ footer {
     transform: scale(1.1); 
 }
 
-@media (max-width: 600px) {
-    .elemento {
-      max-width: 100%; /* Para pantallas pequeñas */
-      max-height: 800px; /* Ajuste de altura */
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* Dispositivos pequeños (móviles) */
+@media screen and (max-width: 600px) {
+
+    
+    header {
+        position: relative;
+        width: 449px;
+    
     }
-  }
+    
+    /* Estilo para el logo en el header */
+    .logo img {
+        position: relative;
+        max-width: 30px; /* Tamaño máximo del logo */
+        right: -50%;
+        cursor: pointer;
+    }
+
+    
+    /* Estilos del menú de navegación */
+    .menu a {
+        margin: 2px; /* Espaciado entre los enlaces */
+        color: black;
+        font-weight: bold;
+        font-size: 11px;
+        cursor: pointer;
+        padding: 10px 20px;
+        
+        
+    }
+    
+
+    .container {
+        width: 370px;
+        height: 25%;
+        position: relative;
+    }
+
+    .container h1 {
+        font-size: 30px;
+        color: black;
+        text-align: center; /* Alinea a la izquierda */
+        position: absolute;
+        top: 5%;
+
+    }
+    
+    .imagen1 img {
+        height: 100px; /* Reduce el tamaño de las imágenes */
+        position: absolute; /* Cambia a posición relativa para que se alineen correctamente */
+        left: 5%; /* Quita el desplazamiento a la derecha */
+        top: 58%;
+    }
+
+    .imagen2 img {
+        height: 100px; /* Reduce el tamaño de las imágenes */
+        position: absolute; /* Cambia a posición relativa para que se alineen correctamente */
+        left: 50%; /* Quita el desplazamiento a la derecha */
+        top: 58%;
+        
+    }
+
+    .buttons {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+
+    button {
+        font-size: 0.9rem; /* Reduce el tamaño de la fuente del botón */
+    }
+
+    
+    /* Estilos para la sección principal */
+    .main-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Estilos para la imagen de instrucciones */
+    .instructions img {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+        margin-left: 1px;
+        margin-right: 10px;
+    }
+
+    .info {
+        padding: 20px;
+        border-radius: 10px;
+        width: 650px;
+        height: 200px;
+        margin-right: 150px;
+    
+    }
+
+    .info h2 {
+        font-size: 15px;
+        color: #333;
+        text-align: center;
+
+    }
+
+    .info p {
+        font-size: 10px;
+        color: black;
+        text-align: justify;
+        display: flex; /* Utiliza flexbox */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        text-align: justify; /* Alinea el texto al centro */
+    
+    }
+
+    .actions {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+
+    .actions button {
+        margin: 0 10px;
+    
+    }
+}
+
+footer {
+    display: flex;                /* Activa Flexbox */
+    justify-content: space-between; /* Espacio entre el texto y los íconos */
+    align-items: center;           /* Centra verticalmente ambos elementos */
+    padding: 20px;
+    background-color: black;       /* Fondo negro */
+    color: white;                  /* Texto en blanco */
+    font-size: 15px;
+    width: 100%;
+
+}
   
-  @media (min-width: 601px) {
-    .elemento {
-      max-width: 80%; /* Para pantallas más grandes */
-      max-height: 900px; /* Ajuste de altura */
-    }
-  }
+.redes-sociales {
+    display: flex;
+    align-items: center;           /* Centra verticalmente los íconos dentro del contenedor */
+    position: relative;
+    right: 5%;
+}
+  
+.redes-sociales img {
+    width: 40px;                   /* Ajusta el tamaño de los íconos */
+    margin-left: 15px;             /* Espacio entre los íconos */
+    cursor: pointer;
+}
+
+
