@@ -60,46 +60,38 @@ header {
 }
 
 .container {
-    padding: 50px;
-    margin-bottom: 30px;
-    width: 100%;
-    background: linear-gradient(to right, #D3EEFC, #99FF8A);
     display: flex;
-    align-items: center; /* Centra verticalmente */
-    position: relative;
+    justify-content: space-between; /* Espacio entre el texto/botones y las imágenes */
+    align-items: center; /* Alinea verticalmente el contenido de la izquierda con las imágenes */
+    background: linear-gradient(to right, #D3EEFC, #99FF8A);
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
-.container h1 {
-    font-size: 2rem;
-    color: black;
-    text-align: left; /* Alinea a la izquierda */
-}
-
-.imagen1 img {
-    height: 150px;
-    width: auto; /* Ancho de la imagen */
-    position: absolute; /* Permite moverla libremente */
-    top: 15%; /* Distancia desde la parte superior */
-    right: 35%; /* Distancia desde la izquierda */
-}
-
-.imagen2 img {
-    height: 150px;
-    width: auto; /* Ancho de la imagen */
-    position: absolute; /* Permite moverla libremente */
-    top: 15%; /* Distancia desde la parte superior */
-    right: 20%; /* Distancia desde la izquierda */
+.text-buttons {
+    display: flex;
+    flex-direction: column; /* Coloca el texto y los botones en una columna */
+    align-items: flex-start; /* Alinea el texto y botones a la izquierda */
 }
 
 .buttons {
-    margin-top: 15px;
-    margin-left: 5px; /* Alinea botones a la izquierda */
-    position: absolute; /* Permite moverla libremente */
-    top: 70%; /* Distancia desde la parte superior */
-    left: 5%; /* Distancia desde la izquierda */
+    display: flex;
+    flex-direction: row; /* Mantén los botones en una fila */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 10px; /* Espacio entre el título y los botones */
 }
 
+.images-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
+}
 
+.imagen1 img,
+.imagen2 img {
+    height: 150px; /* Ajusta la altura de las imágenes */
+    width: auto; /* Mantén la proporción de las imágenes */
+}
 
 button {
     background-color: #efefef;
@@ -252,39 +244,37 @@ footer {
     
 
     .container {
-        width: 370px;
-        height: 25%;
-        position: relative;
+        display: flex;                /* Activa flexbox */
+        flex-direction: column;       /* Los elementos se apilan verticalmente */
+        justify-content: center;      /* Centra verticalmente */
+        align-items: center;          /* Centra horizontalmente */             
+        gap: 20px;   
     }
-
+ 
     .container h1 {
-        font-size: 30px;
-        color: black;
+        font-size: 25px;
         text-align: center; /* Alinea a la izquierda */
-        position: absolute;
-        top: 5%;
-
     }
     
     .imagen1 img {
         height: 100px; /* Reduce el tamaño de las imágenes */
-        position: absolute; /* Cambia a posición relativa para que se alineen correctamente */
-        left: 5%; /* Quita el desplazamiento a la derecha */
-        top: 58%;
+        display: flex;                /* Flex para las imágenes */
+        justify-content: center;      /* Centra horizontalmente */
+        gap: 20px;  
     }
 
     .imagen2 img {
         height: 100px; /* Reduce el tamaño de las imágenes */
-        position: absolute; /* Cambia a posición relativa para que se alineen correctamente */
-        left: 50%; /* Quita el desplazamiento a la derecha */
-        top: 58%;
-        
+        display: flex;                /* Flex para las imágenes */
+        justify-content: center;      /* Centra horizontalmente */
+        gap: 20px;  
     }
 
     .buttons {
-        position: absolute;
-        top: 30%;
-        left: 20%;
+        font-size: 10px;
+        display: flex;                /* Flex para las imágenes */
+        justify-content: center;      /* Centra horizontalmente */
+        gap: 20px;  
     }
 
     button {
