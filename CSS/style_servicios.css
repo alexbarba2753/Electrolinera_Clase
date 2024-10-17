@@ -220,7 +220,7 @@ h2{
     .menu a {
         margin: 5px; /* Espaciado entre los enlaces */
         font-weight: bold;
-        font-size: 20px;
+        font-size: 15px;
         cursor: pointer;
         padding: 5px 5px;
     }
