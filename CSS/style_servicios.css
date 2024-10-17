@@ -110,7 +110,7 @@ h2{
 .imagen2 img{
     height: 150px;
     width: auto;
-    margin-right: 15px;
+    margin-right: 35px;
 }
 .imagen3 img{
     width: 120px;
@@ -147,6 +147,8 @@ h2{
     padding: 20px;
     background-color: white;
 }
+
+
 
 .fila-superior, .fila-inferior {
     display: flex;
@@ -205,6 +207,56 @@ h2{
 
 /* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
+    /* Estilo para el logo en el header */
+    .logo img {
+        position: relative;
+        max-width: 30px; /* Tamaño máximo del logo */
+        right: -50%;
+    
+    }
+
+    
+    /* Estilos del menú de navegación */
+    .menu a {
+        margin: 5px; /* Espaciado entre los enlaces */
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 5px 5px;
+    }
+
+    .background {
+        height: 100%;
+    }
+
+    h2{
+        margin-top: 20px;
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .service-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen1{
+        margin-bottom: -5%;
+    }
+    .imagen2{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen2 h3{
+        margin-top: 10px;
+    }
+
+    .imagen2 img{
+        height: 120px;
+        width: 80px;
+        margin-left: 42%;
+    }
+
+
     .fila-superior, .fila-inferior {
         flex-direction: column; /* Coloca los elementos en columna */
         align-items: center; /* Centra los elementos en la columna */
