@@ -270,6 +270,16 @@ h2{
         max-width: 100%; /* Asegura que la imagen se ajuste al tamaño del contenedor */
         height: auto; /* Mantiene la proporción de la imagen */
     }
+
+    footer{
+        margin-bottom: 30px;
+    }
+    footer p{
+        font-size: 20px;
+        margin-left: 5px;
+        text-align: center;
+    }
+
 }   
 
 
