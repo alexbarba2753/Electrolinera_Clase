@@ -211,18 +211,17 @@ h2{
     .logo img {
         position: relative;
         max-width: 30px; /* Tamaño máximo del logo */
-        right: -50%;
     
     }
 
     
     /* Estilos del menú de navegación */
     .menu a {
-        margin: 5px; /* Espaciado entre los enlaces */
+        margin: 2px; /* Espaciado entre los enlaces */
         font-weight: bold;
         font-size: 15px;
-        cursor: pointer;
-        padding: 5px 5px;
+        padding: 1px 1px;
+
     }
 
     .background {
