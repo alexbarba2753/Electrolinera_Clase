@@ -72,19 +72,24 @@ header {
     display: flex;
     flex-direction: column; /* Coloca el texto y los botones en una columna */
     align-items: flex-start; /* Alinea el texto y botones a la izquierda */
+    margin-left: 100px;
 }
-
+.text-buttons h1{
+    text-align: center;
+}
 .buttons {
     display: flex;
     flex-direction: row; /* Mantén los botones en una fila */
     gap: 10px; /* Espacio entre los botones */
     margin-top: 10px; /* Espacio entre el título y los botones */
+    margin-left: 40px;
 }
 
 .images-container {
     display: flex;
     align-items: center; /* Centra verticalmente las imágenes */
     gap: 20px; /* Espacio entre las imágenes */
+    margin-right: 100px;
 }
 
 .imagen1 img,
@@ -107,9 +112,6 @@ button {
 button:hover {
     background-color: #ddd;
 }
-
-
-
 
 /* Estilos para la sección principal */
 .main-content {
@@ -135,7 +137,7 @@ button:hover {
     padding: 20px;
     border-radius: 10px;
     width: 650px;
-    height: 300px;
+    height: 275px;
     margin-right: 150px;
     
 }
@@ -214,68 +216,47 @@ footer {
 /* Dispositivos pequeños (móviles) */
 @media screen and (max-width: 600px) {
 
-    
-    header {
-        position: relative;
-        width: 449px;
-    
-    }
-    
     /* Estilo para el logo en el header */
     .logo img {
         position: relative;
         max-width: 30px; /* Tamaño máximo del logo */
         right: -50%;
-        cursor: pointer;
+    
     }
 
     
     /* Estilos del menú de navegación */
     .menu a {
-        margin: 2px; /* Espaciado entre los enlaces */
-        color: black;
+        margin: 0px; /* Espaciado entre los enlaces */
         font-weight: bold;
         font-size: 11px;
         cursor: pointer;
-        padding: 10px 20px;
-        
-        
+        padding: 5px 5px;
     }
     
+    .container{
+        display: flex;
+        align-items: center; /* Alinea verticalmente el contenido de la izquierda con las imágenes */
+        background: linear-gradient(to right, #D3EEFC, #99FF8A);
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
 
-    .container {
-        display: flex;                /* Activa flexbox */
-        flex-direction: column;       /* Los elementos se apilan verticalmente */
-        justify-content: center;      /* Centra verticalmente */
-        align-items: center;          /* Centra horizontalmente */             
-        gap: 20px;   
-    }
- 
-    .container h1 {
-        font-size: 25px;
-        text-align: center; /* Alinea a la izquierda */
-    }
-    
-    .imagen1 img {
-        height: 100px; /* Reduce el tamaño de las imágenes */
-        display: flex;                /* Flex para las imágenes */
-        justify-content: center;      /* Centra horizontalmente */
-        gap: 20px;  
     }
 
+    .images-container{
+        justify-content: center;
+
+    }
+
+    .imagen1 img,
     .imagen2 img {
-        height: 100px; /* Reduce el tamaño de las imágenes */
-        display: flex;                /* Flex para las imágenes */
-        justify-content: center;      /* Centra horizontalmente */
-        gap: 20px;  
+        height: 100px; /* Ajusta la altura de las imágenes */
+        width: auto; /* Mantén la proporción de las imágenes */
     }
+    
 
-    .buttons {
-        font-size: 10px;
-        display: flex;                /* Flex para las imágenes */
-        justify-content: center;      /* Centra horizontalmente */
-        gap: 20px;  
-    }
+
 
     button {
         font-size: 0.9rem; /* Reduce el tamaño de la fuente del botón */
@@ -337,9 +318,9 @@ footer {
         margin: 0 10px;
     
     }
-}
 
-footer {
+
+    footer {
     display: flex;                /* Activa Flexbox */
     justify-content: space-between; /* Espacio entre el texto y los íconos */
     align-items: center;           /* Centra verticalmente ambos elementos */
@@ -349,19 +330,18 @@ footer {
     font-size: 15px;
     width: 100%;
 
-}
+    }
   
-.redes-sociales {
+    .redes-sociales {
     display: flex;
     align-items: center;           /* Centra verticalmente los íconos dentro del contenedor */
     position: relative;
     right: 5%;
-}
+    }
   
-.redes-sociales img {
+    .redes-sociales img {
     width: 40px;                   /* Ajusta el tamaño de los íconos */
     margin-left: 15px;             /* Espacio entre los íconos */
     cursor: pointer;
+    }
 }
-
-
